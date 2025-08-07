@@ -1,11 +1,5 @@
-import React from 'react'
-
 const ModalLayout = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div>ModalLayout</div>;
+};
 
-export default ModalLayout
+export default ModalLayout;

@@ -1,14 +1,12 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import {ToastContainer} from "react-toastify"
-
+import { Outlet } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 const AppWrapperLayout = () => {
   return (
     <>
-          <ToastContainer />
-          <Outlet />
+      <ToastContainer />
+      <Outlet />
     </>
-  )
-}
+  );
+};
 
-export default AppWrapperLayout
+export default AppWrapperLayout;

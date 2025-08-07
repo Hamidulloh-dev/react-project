@@ -1,11 +1,10 @@
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import { Outlet } from "react-router-dom";
-import '../index.css'
-const RoutLayout = () => {
+const RootLayout = () => {
   return (
     <>
-      <div className="flex w-full h-full bg-blue-50 p-5">
+      <div className="flex">
         <Sidebar />
         <div>
           <Header />
@@ -15,4 +14,5 @@ const RoutLayout = () => {
     </>
   );
 };
-export default RoutLayout;
+
+export default RootLayout;

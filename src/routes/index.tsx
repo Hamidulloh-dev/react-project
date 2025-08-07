@@ -1,16 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
-import RoutLayout from "../layouts/RoutLayout";
+import AppWrapperLayout from "../layouts/AppWrapperLayout";
+import RootLayout from "../layouts/RoutLayout";
 import DashboardPage from "../pages/DashboardPage";
-import SigninPage from "../pages/SigninPage";
-import SignupPage from "../pages/SignupPage";
+import SignInPage from "../pages/SigninPage";
+import SignUpPage from "../pages/SignupPage";
 
-const routes = createBrowserRouter([
+export const routes = createBrowserRouter([
   {
     path: "/",
-    element: <RoutLayout />,
+    element: <AppWrapperLayout />,
     children: [
       {
-        element: <RoutLayout />,
+        element: <RootLayout />,
         children: [
           {
             index: true,
@@ -20,11 +21,11 @@ const routes = createBrowserRouter([
       },
       {
         path: "sign-in",
-        element: <SigninPage />,
+        element: <SignInPage />,
       },
       {
         path: "sign-up",
-        element: <SignupPage />,
+        element: <SignUpPage />,
       },
     ],
   },
