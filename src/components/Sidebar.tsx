@@ -11,7 +11,7 @@ import { LuLogOut } from "react-icons/lu";
 import '../index.css'
 
 const Sidebar = () => {
-    return <aside className="flex flex-col justify-between items-center bg-white w-[200px] h-[1265px] rounded-xl">
+    return <aside className="flex flex-col justify-between items-center bg-[#FFFFFF] shadow-sm w-[200px] h-[1265px] rounded-xl">
         <div>
             <div>
                 <img className="mt-[40px] ml-[24px] mb-[40px]" src="/Companys logo.svg" alt="" />
